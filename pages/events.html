@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Better With You</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/effects.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+
+    <div class="grain-overlay"></div>
+
+    <!-- Nightclub corner lights -->
+    <div class="corner-light corner-light-tl"></div>
+    <div class="corner-light corner-light-tr"></div>
+    <div class="corner-light corner-light-bl"></div>
+    <div class="corner-light corner-light-br"></div>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+        <div class="nav-menu-items">
+            <!-- Navigation items will be generated dynamically from config.js -->
+        </div>
+    </nav>
+
+    <div class="website-wrapper">
+        <div class="top-section">
+            <div style="max-width: 900px; width: 100%;">
+                <h1 class="logo-text" style="font-size: clamp(40px, 10vw, 80px); margin-bottom: 50px; text-align: center;">Upcoming Events</h1>
+                
+                <!-- Event Card 1 -->
+                <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 30px; margin-bottom: 30px;">
+                    <h2 style="font-size: 28px; font-weight: 600; margin-bottom: 15px;">Friday Night Sessions</h2>
+                    <div style="display: flex; gap: 30px; flex-wrap: wrap; margin-bottom: 15px; opacity: 0.8;">
+                        <span style="font-size: 16px;">📅 Every Friday</span>
+                        <span style="font-size: 16px;">🕐 22:00 - Late</span>
+                        <span style="font-size: 16px;">📍 Cape Town</span>
+                    </div>
+                    <p style="font-size: 16px; line-height: 1.6; opacity: 0.8; margin-bottom: 20px;">
+                        Join us for our signature Friday night experience featuring resident DJs and special guests.
+                    </p>
+                    <a href="https://www.quicket.co.za/events/326910-better-with-you-2-august" target="_blank" class="tickets-button" style="font-size: 16px; padding: 12px 30px;">Get Tickets</a>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 30px;">
+                    <h2 style="font-size: 28px; font-weight: 600; margin-bottom: 15px;">Special Events</h2>
+                    <p style="font-size: 16px; line-height: 1.6; opacity: 0.8;">
+                        Stay tuned for announcements about our special events, featuring international artists and unique experiences. Follow us on social media for updates.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="links-row">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/betterwithyou_ct" target="_blank" class="link social-logo-link">
+                        <img src="../instagram_logo.png" alt="Instagram" class="social-logo">
+                    </a>
+                    <a href="https://on.soundcloud.com/Uy7FVXLhojwaH1m7o8" target="_blank" class="link social-logo-link">
+                        <img src="../soundcloud_logo.png" alt="SoundCloud" class="social-logo">
+                    </a>
+                </div>
+                <a href="../index.html" class="tickets-button">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/effects.js"></script>
+</body>
+</html>

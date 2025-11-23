@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Better With You</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/effects.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+
+    <div class="grain-overlay"></div>
+
+    <!-- Nightclub corner lights -->
+    <div class="corner-light corner-light-tl"></div>
+    <div class="corner-light corner-light-tr"></div>
+    <div class="corner-light corner-light-bl"></div>
+    <div class="corner-light corner-light-br"></div>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+        <div class="nav-menu-items">
+            <!-- Navigation items will be generated dynamically from config.js -->
+        </div>
+    </nav>
+
+    <div class="website-wrapper">
+        <div class="top-section">
+            <div style="max-width: 1000px; width: 100%;">
+                <h1 class="logo-text" style="font-size: clamp(40px, 10vw, 80px); margin-bottom: 50px; text-align: center;">Gallery</h1>
+                
+                <!-- Gallery Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <!-- Gallery Item 1 -->
+                    <div style="aspect-ratio: 1; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        🎵
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div style="aspect-ratio: 1; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        🎧
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div style="aspect-ratio: 1; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        🎪
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div style="aspect-ratio: 1; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        ✨
+                    </div>
+                    <!-- Gallery Item 5 -->
+                    <div style="aspect-ratio: 1; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        🎆
+                    </div>
+                    <!-- Gallery Item 6 -->
+                    <div style="aspect-ratio: 1; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+                        🌟
+                    </div>
+                </div>
+                
+                <p style="text-align: center; margin-top: 40px; font-size: 16px; opacity: 0.7;">
+                    Follow us on Instagram to see more photos from our events!
+                </p>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="links-row">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/betterwithyou_ct" target="_blank" class="link social-logo-link">
+                        <img src="../instagram_logo.png" alt="Instagram" class="social-logo">
+                    </a>
+                    <a href="https://on.soundcloud.com/Uy7FVXLhojwaH1m7o8" target="_blank" class="link social-logo-link">
+                        <img src="../soundcloud_logo.png" alt="SoundCloud" class="social-logo">
+                    </a>
+                </div>
+                <a href="../index.html" class="tickets-button">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/effects.js"></script>
+</body>
+</html>

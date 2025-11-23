@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better With You - Cape Town Events</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+
+    <div class="grain-overlay"></div>
+
+    <!-- Nightclub corner lights -->
+    <div class="corner-light corner-light-tl"></div>
+    <div class="corner-light corner-light-tr"></div>
+    <div class="corner-light corner-light-bl"></div>
+    <div class="corner-light corner-light-br"></div>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+        <div class="nav-menu-items">
+            <!-- Navigation items will be generated dynamically from config.js -->
+        </div>
+    </nav>
+
+    <div class="website-wrapper">
+        <div class="top-section">
+            <img src="Logo.png" alt="Better With You" class="logo-text logo-image">
+        </div>
+
+        <div class="bottom-section">
+            <div class="info-row">
+                <div class="location">CAPE TOWN</div>
+                <div class="event-details">
+                    <span>EVENTS & EXPERIENCES</span>
+                </div>
+            </div>
+
+            <div class="links-row">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/betterwithyou_ct" target="_blank" class="link social-logo-link">
+                        <img src="instagram_logo.png" alt="Instagram" class="social-logo">
+                    </a>
+                    <a href="https://on.soundcloud.com/Uy7FVXLhojwaH1m7o8" target="_blank" class="link social-logo-link">
+                        <img src="soundcloud_logo.png" alt="SoundCloud" class="social-logo">
+                    </a>
+                </div>
+                <a href="https://www.quicket.co.za/events/326910-better-with-you-2-august" target="_blank" class="tickets-button">Tickets</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fog overlay on top of everything -->
+    <div class="fog-container">
+        <canvas id="fogCanvas"></canvas>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/effects.js"></script>
+</body>
+</html>
