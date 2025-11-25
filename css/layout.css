@@ -5,8 +5,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
   padding: 40px;
+  padding-bottom: 140px; /* Space for fixed bottom bar */
 }
 
 .top-section {
@@ -45,10 +46,32 @@
   text-shadow: none;
 }
 
+.location-label {
+  position: fixed;
+  bottom: 120px;
+  left: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  z-index: 99;
+}
+
 .bottom-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 25px 40px;
+  background: rgba(10, 10, 10, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .info-row {
@@ -85,8 +108,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0;
+  border-top: none;
 }
 
 .social-links {
@@ -154,18 +177,28 @@
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  position: relative;
+  z-index: 1500;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.2);
 }
 
 .tickets-button:hover {
   background: #cccccc;
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.3), 0 10px 30px rgba(255, 255, 255, 0.2);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .website-wrapper {
     padding: 20px;
+    padding-bottom: 160px; /* More space on mobile for stacked layout */
+  }
+
+  .location-label {
+    bottom: 140px;
+    left: 20px;
+    font-size: 16px;
   }
 
   .logo-text {
@@ -174,6 +207,10 @@
 
   .logo-image {
     max-width: clamp(250px, 80vw, 500px);
+  }
+
+  .bottom-section {
+    padding: 20px;
   }
 
   .info-row,
