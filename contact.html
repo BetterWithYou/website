@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Better With You</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/effects.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <style>
+        .top-section {
+            flex: none;
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+
+        .contact-form-container {
+            max-width: 800px;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .contact-form-subtitle {
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.85;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-group {
+            margin-bottom: 50px;
+        }
+
+        .form-label {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            font-size: 16px;
+            padding: 12px 0;
+            font-family: 'Montserrat', sans-serif;
+            transition: border-color 0.3s ease;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .form-input::placeholder,
+        .form-textarea::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-bottom-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+            text-align: left;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+
+        .form-textarea:focus {
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-submit {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 18px 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 40px;
+        }
+
+        .form-submit:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .form-submit:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-background"></div>
+
+    <div class="grain-overlay"></div>
+
+    <!-- Nightclub corner lights -->
+    <div class="corner-light corner-light-tl"></div>
+    <div class="corner-light corner-light-tr"></div>
+    <div class="corner-light corner-light-bl"></div>
+    <div class="corner-light corner-light-br"></div>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+        <div class="nav-menu-items">
+            <!-- Navigation items will be generated dynamically from config.js -->
+        </div>
+    </nav>
+
+    <div class="website-wrapper">
+        <div class="top-section">
+            <div class="contact-form-container">
+                <h1 class="logo-text" style="font-size: clamp(40px, 10vw, 80px); margin-bottom: 30px; text-align: center;">CONTACT US</h1>
+                
+                <p class="contact-form-subtitle">
+                    For general inquiries, collaboration proposals or press requests, feel free to reach out.<br>
+                    We'll get back to you as soon as possible.
+                </p>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label" for="name">NAME</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            class="form-input" 
+                            placeholder="John Doe"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="subject">SUBJECT</label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            class="form-input" 
+                            placeholder="General Inquiry"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="message">MESSAGE</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            class="form-textarea" 
+                            placeholder="How can we help you?"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit">EMAIL US</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="links-row">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/betterwithyou_ct" target="_blank" class="link social-logo-link">
+                        <img src="../instagram_logo.png" alt="Instagram" class="social-logo">
+                    </a>
+                    <a href="https://on.soundcloud.com/Uy7FVXLhojwaH1m7o8" target="_blank" class="link social-logo-link">
+                        <img src="../soundcloud_logo.png" alt="SoundCloud" class="social-logo">
+                    </a>
+                </div>
+                <a href="../index.html" class="tickets-button">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/effects.js"></script>
+    
+    <script>
+        // Handle form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Construct email subject with name appended
+            const emailSubject = `CONTACT%20BETTER%20WITH%20YOU%3A%20${encodeURIComponent(name)}`;
+            
+            // Construct email body with subject and message
+            const emailBody = `Subject: ${subject}%0D%0A%0D%0A${encodeURIComponent(message)}`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:tom@betterwithyou.co.za?subject=${emailSubject}&body=${emailBody}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>
