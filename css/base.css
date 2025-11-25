@@ -8,9 +8,20 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background: #0a0a0a;
     color: #ffffff;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+/* Invisible scrollbar - works on all browsers */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
 }
 
 /* Subtle grain texture overlay */
